@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ScanSeaApp.Inventaire.InventairePalettePage"
+             NavigationPage.HasNavigationBar="false">
+
+    <StackLayout Margin="20,35,20,20">
+        <Label x:Name="NbPaletteLabel" Text="Nombre de palette pour l'emplacement : 0" VerticalOptions="Start" FontSize="Large" IsVisible="False" />
+        <Entry x:Name="EmplacementEntry" TextChanged="OnEmplacementTextChanged" Placeholder="Emplacement" HeightRequest="80" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="PaletteEntry" Completed="OnEntryCompleted" Placeholder="Code palette" HeightRequest="80" VerticalOptions="CenterAndExpand" />
+        <Button Text="Valider" HeightRequest="80" Clicked="OnNextButtonClicked" VerticalOptions="End" />
+        <Button Text="Scanner" HeightRequest="80" Clicked="OnScanButtonClicked" VerticalOptions="End" />
+        <Button Text="Retour" HeightRequest="80" Clicked="OnBackButtonClicked" VerticalOptions="End" />
+    </StackLayout>
+
+</ContentPage>

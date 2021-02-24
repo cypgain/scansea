@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4182ca25-b9eb-4d46-9548-1607879ce79a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ScanSeaProtocols</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Permission.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MessageData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MessageResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\CodeMessageData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\InventaireNumeroMessageData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\InventairePaletteMessageData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\OCLibreNumeroMessageData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\OCLibrePaletteMessageData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\PermissionsMessageData.cs" />
+  </ItemGroup>
+</Project>
